@@ -44,3 +44,15 @@ counter();
 
 
 */
+
+// 5: Callback function:
+
+function calculate(num1, num2, operation) {
+  return operation(num1, num2);
+}
+
+function sum(x, y) {
+  return x + y;
+}
+
+console.log(calculate(3, 3, sum));

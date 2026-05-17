@@ -5,12 +5,15 @@ Parameters:
 • taxRate — the tax percentage (default value: 0.1)
 The function must return the final price including tax.
 Formula: price + (price \* taxRate)
+
 Task 2 — Function Expression
 Take the calculateTotal function from Task 1 and store it inside a variable instead.
 The function should work exactly the same way — only the syntax changes.
+
 Task 3 — Arrow Function
 Rewrite calculateTotal one more time, now using arrow function syntax.
 The result must still be the same as Task 1 and Task 2.
+
 Task 4 — Closure (Nested Function)
 Create a function called createCounter.
 How it works:
@@ -21,6 +24,7 @@ How it works:
    new value
    Hint: The count variable lives inside createCounter. The inner function can still access
    it — this is called a closure.
+
    Task 5 — Callback Function
    Create a function called calculate.
    Parameters:
@@ -28,6 +32,7 @@ How it works:
    • num2 — second number
    • operation — a function that takes two numbers and returns a result
    How it works:
+
 4. calculate receives two numbers and an operation function
 5. It passes both numbers into the operation function
 6. It returns whatever the operation function returns
