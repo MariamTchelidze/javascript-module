@@ -25,3 +25,22 @@ const calculateTotal = (price, taxRate = 0.1) => price + price * taxRate;
 console.log(calculateTotal(10, 0.3));
 
 */
+
+// 4:Closure (Nested Function)
+
+/* 
+function createCounter() {
+  let count = 0;
+
+  return function () {
+    count++;
+    console.log(count);
+  };
+}
+
+const counter = createCounter();
+counter();
+counter();
+
+
+*/
