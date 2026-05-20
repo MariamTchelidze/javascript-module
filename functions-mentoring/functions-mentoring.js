@@ -56,3 +56,28 @@ testScope();
 გარეთ რომ გამოვიტანე, რეფერენს ერორი დამიწერა, 
 რადგან  ფუნქციის შიგნით დეკლარირებული ცვლადის სკოუპი დაირღვა
 */
+
+// Task 8: Shadowed Variables
+let playerScore = 10;
+function updateScore() {
+  let playerScore = 50;
+  console.log(playerScore);
+}
+console.log(playerScore);
+
+// Task 9: Executing Functions Indirectly (Callbacks)
+
+function alertUser() {
+  console.log("Action completed!");
+}
+function executeCallback(callBack) {
+  callBack();
+}
+executeCallback(alertUser);
+
+// Task 10: Indirect vs. Direct Execution with setTimeout
+function timeIsUp() {
+  console.log("Time is Up!");
+}
+setTimeout(timeIsUp, 3000);
+// თუ ფრჩხილებით დავწერთ timeisUp-ს, ფუნქცია აღარ უყურებს დილეი დროს და პირდაპირ ეშვება

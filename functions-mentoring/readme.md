@@ -73,7 +73,7 @@
 // name (let playerScore) and set it to 50 (this is shadowing).
 // Log playerScore inside the function, call the function,
 // and then log playerScore outside the function.
-// Notice how the global variable remains unchanged.
+// Notice how the global variable remains unchanged. ✅
 
 // Task 9: Executing Functions Indirectly (Callbacks)
 // Topic: Executing Functions Indirectly
@@ -82,7 +82,7 @@
 // Write a second function named executeCallback that takes a parameter called callbackFunc.
 // Inside executeCallback, execute the callbackFunc.
 // Call executeCallback and pass alertUser as
-// an argument (remember to pass it indirectly, without parentheses).
+// an argument (remember to pass it indirectly, without parentheses). ✅
 
 // Task 10: Indirect vs. Direct Execution with setTimeout
 // Topic: Indirect vs. Direct Execution
@@ -91,4 +91,4 @@
 // Use the built-in setTimeout function to execute timeIsUp after 3 seconds (3000 milliseconds).
 // Ensure you are passing the function reference correctly (indirect execution).
 // Write a comment explaining what would happen if you used
-// timeIsUp() with parentheses inside the setTimeout.
+// timeIsUp() with parentheses inside the setTimeout. ✅
