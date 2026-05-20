@@ -30,3 +30,29 @@ displayCarDetails({
 });
 
 // Task 5: Returning Values vs Logging
+function calculateDiscount(price, discountPercentage) {
+  return price - (price * discountPercentage) / 100;
+}
+console.log(calculateDiscount(30, 10));
+
+// Task 6: Hoisting
+
+console.log(sayGoodbye());
+
+function sayGoodbye() {
+  return "Goodbye my lover, Goodbye my friend... tananananaaa";
+}
+sayGoodbye();
+
+// Task 7: Global and Local Scope
+let secretCode = "XYZ123";
+function testScope() {
+  let localPin = "9999";
+  console.log(secretCode);
+  console.log(localPin);
+}
+testScope();
+/*
+გარეთ რომ გამოვიტანე, რეფერენს ერორი დამიწერა, 
+რადგან  ფუნქციის შიგნით დეკლარირებული ცვლადის სკოუპი დაირღვა
+*/

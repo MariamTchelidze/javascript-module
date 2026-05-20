@@ -44,14 +44,14 @@
 // The function MUST calculate the final price and return the value, NOT log it.
 // Call the function with a price of 200 and a discount of 15,
 // store the returned result in a variable named finalPrice,
-// and then console.log(finalPrice) outside the function.
+// and then console.log(finalPrice) outside the function. ✅
 
 // Task 6: Hoisting
 // Topic: The Importance of Code Order
 // Instructions:
 // Write a function declaration called sayGoodbye that returns the string "Goodbye!".
 // To demonstrate hoisting, call this function and log its result on the line above
-// where the function is actually defined in your code.
+// where the function is actually defined in your code. ✅
 
 // Task 7: Global and Local Scope
 // Topic: Introduction to Scopes
@@ -62,7 +62,7 @@
 // a local variable named localPin with the value "9999".
 // Inside the function, try logging both variables.
 // Outside the function, try logging both variables.
-// Observe which one causes a ReferenceError and comment out the line that breaks the code.
+// Observe which one causes a ReferenceError and comment out the line that breaks the code. ✅
 
 // Task 8: Shadowed Variables
 // Topic: Shadowed Variables
