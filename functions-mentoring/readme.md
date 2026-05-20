@@ -6,7 +6,7 @@
 // parameters (a and b) and returns their sum.
 // Then, create a function expression
 // that does exactly the same thing and
-// assign it to a const variable named addNumbersExpr.
+// assign it to a const variable named addNumbersExpr. ✅
 
 // Task 2: Arrow Functions
 // Topic: Modern ES6 Features
@@ -14,7 +14,7 @@
 // Convert the addNumbersExpr function from
 // Task 1 into a modern ES6 Arrow Function.
 // Assign it to a const variable named addNumbersArrow.
-// Keep the syntax as short as possible.
+// Keep the syntax as short as possible. ✅
 
 // Task 3: Parameters and Arguments
 // Topic: Adding a Custom Function
@@ -24,7 +24,7 @@
 // Inside the function, use console.log to print
 // the sentence: "Hello, my name is [firstName] and I am a [profession]."
 // After defining it, call the function and
-// pass your own name and profession as arguments.
+// pass your own name and profession as arguments. ✅
 
 // Task 4: Function Destructuring
 // Topic: Modern ES6 Features
@@ -34,7 +34,7 @@
 // The object will have brand, model, and year properties.
 // Use ES6 object destructuring directly inside the function parameters
 // to extract these values and log them to the console.
-// Example object to pass: { brand: 'Toyota', model: 'Corolla', year: 2022 }
+// Example object to pass: { brand: 'Toyota', model: 'Corolla', year: 2022 } ✅
 
 // Task 5: Returning Values vs Logging
 // Topic: Returning Values
