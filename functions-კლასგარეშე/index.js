@@ -1,33 +1,18 @@
+// Task 1:
 function calculateFinalScore(basePoints, bonusPoints, penalty) {
-  basePoints = basePoints || 0;
+  // if bonusPoints || penalty isn't passed, they will set to 0
   bonusPoints = bonusPoints || 0;
   penalty = penalty || 0;
 
+  //   to see what arguments do we have in function
   console.log(arguments);
 
-  let finalScore = basePoints + bonusPoints - penalty;
-  return finalScore;
+  //   extra arguments should be summed up and  substracted from final score
+  let extraNum1 = arguments[3] || 0;
+  let extraNum2 = arguments[4] || 0;
+  //   return the value of function
+  return basePoints + bonusPoints - penalty - (extraNum1 + extraNum2);
 }
-console.log(calculateFinalScore(23, undefined, 3));
+console.log(calculateFinalScore(2, 2, 0, 1, 0.5));
 
-// 2:
-// function greetUser(name = "Guest") {
-//   return "გამარჯობა " + name;
-// }
-// console.log(greetUser("მარიამ"));
-
-const greetUser = (name = "Guest") => "გამარჯობა " + name;
-console.log(greetUser("მარიამ"));
-
-// 3:
-function calculateAre(length, width = length) {
-  return length * width;
-}
-console.log(calculateAre(4, 5));
-
-// 4:
-// function calculateInterest(amount, rate = 5) {
-//   return (amount * rate) / 100;
-// }
-const calculateInterest = (amount, rate = 5) => (amount * rate) / 100;
-console.log(calculateInterest(10, 10));
+// Task 2:
