@@ -39,3 +39,10 @@ const calculateArea = (width, length) => {
   return area;
 };
 console.log(calculateArea(2));
+
+// Task 5:
+const calculateInterest = (amount, rate) => {
+  rate = rate || 5;
+  return (amount * rate) / 100;
+};
+console.log(calculateInterest(10, 1));
