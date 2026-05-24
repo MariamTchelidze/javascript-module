@@ -16,3 +16,12 @@ function calculateFinalScore(basePoints, bonusPoints, penalty) {
 console.log(calculateFinalScore(2, 2, 0, 1, 0.5));
 
 // Task 2:
+const calculateTotalPrice = (price, deliveryFee, discount) => {
+  // if  deliveryFee or discount isn't passed function must return 0;
+  deliveryFee = deliveryFee || 0;
+  discount = discount || 0;
+
+  // return value:
+  return price + deliveryFee - discount;
+};
+console.log(calculateTotalPrice(100, 20, 10));

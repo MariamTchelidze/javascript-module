@@ -9,15 +9,6 @@ Extra Arguments: If someone passes more than three arguments into the function, 
 
 ---
 
-Your Objective:
-Write a clean, vanilla JavaScript function named calculateFinalScore that accepts exactly three parameters: basePoints, bonusPoints, and penalty.
-
-However, the function needs to handle the following real-world scenarios gracefully:
-
-Missing Arguments: If bonusPoints or penalty are not passed when the function is called, they should default to 0 inside the logic without using ES6 default parameter syntax (handle it inside the function body).
-
-Extra Arguments: If someone passes more than three arguments into the function, any additional numbers should be added together and subtracted from the final score as an "excess penalty".
-
 პირობა:
 დაწერე JavaScript ფუნქცია სახელით calculateTotalPrice, რომელიც მიიღებს 3 პარამეტრს: price (პროდუქტის ფასი), deliveryFee (მიტანის საფასური) და discount (ფასდაკლება).
 ფუნქციამ უნდა გაითვალისწინოს შემდეგი რეალური სცენარები:
