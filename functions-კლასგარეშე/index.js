@@ -25,3 +25,17 @@ const calculateTotalPrice = (price, deliveryFee, discount) => {
   return price + deliveryFee - discount;
 };
 console.log(calculateTotalPrice(100, 20, 10));
+
+// Task3:
+function greetUser(name = "სტუმარო") {
+  return `გამარჯობა, ${name}!`;
+}
+
+console.log(greetUser());
+// Task 4
+const calculateArea = (width, length) => {
+  length = length || width;
+  let area = width * length;
+  return area;
+};
+console.log(calculateArea(2));
