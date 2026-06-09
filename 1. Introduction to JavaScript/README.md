@@ -2,7 +2,7 @@
 
 ## Complete Theory Guide (0 → Hero)
 
-> 🎥 **Lecture:** _[Add your lecture link here](https://www.youtube.com/watch?v=RMqaTMZY4Y4&list=PLIiZ2bPKUPrcEnu8152Wtxqdmq3DJSXrW&index=11&t=4157s)_
+> 🎥 **Lecture:** _[https://www.youtube.com/watch?v=RMqaTMZY4Y4&list=PLIiZ2bPKUPrcEnu8152Wtxqdmq3DJSXrW&index=11&t=4157s]_
 
 ---
 
