@@ -13,3 +13,5 @@ fruitsArr.push("Peach"); // add last item
 console.log(fruitsArr);
 fruitsArr.unshift("Orange"); //add first item
 console.log(fruitsArr);
+
+//Task 4:
