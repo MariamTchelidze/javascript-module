@@ -15,3 +15,14 @@ fruitsArr.unshift("Orange"); //add first item
 console.log(fruitsArr);
 
 //Task 4:
+const removeArr = ["el1", "el2", "el3"];
+console.log(removeArr);
+removeArr.pop(); // removes last element
+console.log(removeArr);
+removeArr.shift();
+console.log(removeArr); // removes first element
+
+// Task 5:
+const tenItem = ["el1", "el2", "el3", "el4", "el5", 6, 7, 8, 9, 10];
+console.log(tenItem);
+console.log(tenItem.length);
