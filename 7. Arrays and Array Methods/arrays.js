@@ -21,6 +21,7 @@ removeArr.pop(); // removes last element
 console.log(removeArr);
 removeArr.shift();
 console.log(removeArr); // removes first element
+console.log(removeArr.shift()); // აბრუნებს იმ ელემენტს რომელიც წაშალა
 
 // Task 5:
 const tenItem = ["el1", "el2", "el3", "el4", "el5", 6, 7, 8, 9, 10];
