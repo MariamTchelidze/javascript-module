@@ -3,10 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guess My Number</title>
+    <title>Guess My Number!</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <script src="script.js"></script>
+    <!-- TOP SECTION -->
+    <header class="header">
+      <button class="btn-again" onclick="resetGame()">Again!</button>
+      <h1 class="title">Guess My Number!</h1>
+      <p class="hint">(Between 1 and 20)</p>
+    </header>
+
+    <!-- DIVIDER + NUMBER BOX -->
+    <div class="divider-row">
+      <div class="secret-number" id="secretDisplay">?</div>
+    </div>
+
+    <!-- BOTTOM SECTION -->
+    <main class="main">
+      <div class="left-panel">
+        <input class="guess-input" type="number" id="guessInput" min="1" max="20" placeholder="" />
+        <button class="btn-check" onclick="checkGuess()">Check!</button>
+      </div>
+
+      <div class="right-panel">
+        <p class="message" id="message">Start guessing...</p>
+        <p class="score-line"><span class="dot red">●</span> Score: <span id="score">20</span></p>
+        <p class="score-line"><span class="dot gold">●</span> Highscore: <span id="highscore">0</span></p>
+      </div>
+    </main>
   </body>
 </html>
