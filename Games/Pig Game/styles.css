@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+/* ===== RESET ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+/* ===== BODY — full-page radial gradient ===== */
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Nunito', sans-serif;
+  /* red top-left → purple bottom-right */
+  background: radial-gradient(ellipse at 20% 20%, #c0392b 0%, #922b5e 45%, #6d3880 75%, #5b3090 100%);
+}
+
+/* ===== GAME CARD ===== */
+.game {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 14rem 1fr;
+  width: 60rem;
+  height: 34rem;
+  border-radius: 1.2rem;
+  overflow: visible;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.35);
+}
+
+/* ===== PLAYER PANELS ===== */
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5.5rem 2.4rem 2.4rem;
+  transition: background 0.4s;
+}
+
+.player--0 {
+  background: rgba(220, 160, 170, 0.55);
+  border-radius: 1.2rem 0 0 1.2rem;
+}
+
+.player--1 {
+  background: rgba(175, 120, 155, 0.55);
+  border-radius: 0 1.2rem 1.2rem 0;
+}
+
+/* Active player gets a slightly lighter overlay */
+.player--active.player--0 {
+  background: rgba(230, 175, 182, 0.65);
+}
+
+.player--active.player--1 {
+  background: rgba(185, 130, 162, 0.65);
+}
+
+/* Winner highlight */
+.player--winner.player--0,
+.player--winner.player--1 {
+  background: rgba(255, 215, 100, 0.45);
+}
+
+/* ===== PLAYER NAME ===== */
+.player__name {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  color: #2c2c3a;
+  text-align: center;
+}
+
+/* ===== TOTAL SCORE ===== */
+.player__score {
+  font-size: 7.5rem;
+  font-weight: 700;
+  color: #b5244a;
+  line-height: 1;
+  text-align: center;
+}
+
+/* ===== CURRENT SCORE BOX ===== */
+.player__current {
+  background-color: #b5244a;
+  border-radius: 0.6rem;
+  width: 100%;
+  padding: 1.2rem 1.6rem 1.4rem;
+  text-align: center;
+}
+
+.current__label {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 0.4rem;
+}
+
+.current__score {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+}
+
+/* ===== CENTER CONTROLS COLUMN ===== */
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 3.2rem;
+  gap: 1rem;
+  /* subtle divider strip between panels */
+  background: rgba(160, 100, 140, 0.35);
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.btn:active {
+  transform: translateY(0.1rem);
+  box-shadow: none;
+}
+
+/* NEW GAME — pill, positioned at top center of card */
+.btn--new {
+  position: absolute;
+  top: -1.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  color: #555;
+  border-radius: 10rem;
+  padding: 1rem 2.2rem;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.18);
+  z-index: 10;
+  white-space: nowrap;
+}
+
+.btn--new:hover {
+  box-shadow: 0 0.6rem 1.6rem rgba(0, 0, 0, 0.25);
+}
+
+/* ROLL DICE & HOLD — pill style */
+.btn--roll,
+.btn--hold {
+  background: #fff;
+  color: #555;
+  border-radius: 10rem;
+  padding: 0.9rem 2rem;
+  width: 13rem;
+  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.15);
+}
+
+.btn--roll:hover,
+.btn--hold:hover {
+  box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.22);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 680px) {
+  .game {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    width: 92vw;
+    height: auto;
+    border-radius: 1.2rem;
+  }
+
+  .player--0 {
+    border-radius: 1.2rem 1.2rem 0 0;
+    padding-top: 7rem;
+  }
+
+  .player--1 {
+    border-radius: 0 0 1.2rem 1.2rem;
+  }
+
+  .controls {
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem 1.6rem;
+    gap: 1.2rem;
+    background: rgba(160, 100, 140, 0.35);
+  }
+
+  .btn--new {
+    top: -1.8rem;
+  }
+}

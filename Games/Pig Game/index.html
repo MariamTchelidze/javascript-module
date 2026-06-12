@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pig Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game">
+      <!-- NEW GAME button centered at top -->
+      <button class="btn btn--new" onclick="newGame()">🔄 NEW GAME</button>
+
+      <!-- PLAYER 1 -->
+      <section class="player player--0 player--active">
+        <h2 class="player__name">PLAYER 1</h2>
+        <p class="player__score">0</p>
+        <div class="player__current">
+          <p class="current__label">CURRENT</p>
+          <p class="current__score" id="current--0">0</p>
+        </div>
+      </section>
+
+      <!-- CENTER CONTROLS -->
+      <div class="controls">
+        <button class="btn btn--roll" onclick="rollDice()">🎲 ROLL DICE</button>
+        <button class="btn btn--hold" onclick="holdScore()">📥 HOLD</button>
+      </div>
+
+      <!-- PLAYER 2 -->
+      <section class="player player--1">
+        <h2 class="player__name">PLAYER 2</h2>
+        <p class="player__score">0</p>
+        <div class="player__current">
+          <p class="current__label">CURRENT</p>
+          <p class="current__score" id="current--1">0</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
