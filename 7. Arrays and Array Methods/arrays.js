@@ -49,3 +49,33 @@ const forOfArr = ["This", "is", "for...of", "loop"];
 for (const element of forOfArr) {
   console.log(element);
 }
+
+for (const fruit of fruitArr) {
+  console.log(fruit);
+}
+
+fruitArr.map((element, index, array) => {
+  console.log(element, index, array);
+}); //returns value
+colorArr.forEach((element, index, array) => {
+  console.log(element, index, array);
+});
+
+// task 8:
+const numbers = [12, 45, 7, 99, 31];
+// numbers.forEach((number) => {
+//   console.log(number);
+// });
+// find the largest number:
+const largestNum = Math.max(...numbers);
+console.log(largestNum);
+
+// loop
+let largest = numbers[0];
+
+for (let i = 1; i < numbers.length; i++) {
+  if (numbers[i] > largest) {
+    largest = numbers[i];
+  }
+}
+console.log(largest);
