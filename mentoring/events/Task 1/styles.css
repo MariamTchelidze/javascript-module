@@ -1,0 +1,14 @@
+.products {
+  display: grid;
+  gap: 10px;
+  max-width: 400px;
+}
+
+.product {
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+
+.hidden {
+  display: none;
+}
