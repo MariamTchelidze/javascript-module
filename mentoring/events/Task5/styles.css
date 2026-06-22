@@ -1,0 +1,17 @@
+body {
+  transition: 0.2s;
+}
+
+body.dark {
+  background: #151515;
+  color: white;
+}
+
+.message {
+  padding: 20px;
+  border: 1px solid #aaa;
+}
+
+.hidden {
+  display: none;
+}
