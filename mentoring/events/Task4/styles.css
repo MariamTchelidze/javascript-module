@@ -1,0 +1,24 @@
+.form-group {
+  margin-bottom: 14px;
+}
+
+input {
+  display: block;
+  width: 280px;
+  padding: 10px;
+  border: 1px solid #aaa;
+}
+
+input.invalid {
+  border-color: red;
+}
+
+.error {
+  min-height: 18px;
+  color: red;
+  font-size: 14px;
+}
+
+.success {
+  color: green;
+}
