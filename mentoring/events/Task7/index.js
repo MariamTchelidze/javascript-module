@@ -32,3 +32,17 @@ form.addEventListener("submit", (event) => {
 
   input.value = "";
 });
+todoList.addEventListener("click", (event) => {
+  const completeBtn = event.target.closest(".complete-btn");
+  const deleteBtn = event.target.closest(".delete-btn");
+
+  if (completeBtn) {
+    const task = completeBtn.closest("li");
+    task.classList.toggle("completed");
+  }
+
+  if (deleteBtn) {
+    const task = deleteBtn.closest("li");
+    task.remove();
+  }
+});
