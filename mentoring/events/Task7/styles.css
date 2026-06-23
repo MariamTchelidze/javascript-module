@@ -1,0 +1,10 @@
+.completed .task-text {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+li {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+}
