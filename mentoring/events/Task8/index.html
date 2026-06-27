@@ -3,10 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Task 8 - Events & Event Handling</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div id="filterButtons" class="filters">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="electronics">Electronics</button>
+      <button class="filter-btn" data-category="books">Books</button>
+      <button class="filter-btn" data-category="clothes">Clothes</button>
+    </div>
+
+    <div id="productContainer">
+      <div class="product" data-category="electronics">Laptop</div>
+      <div class="product" data-category="books">JavaScript Book</div>
+      <div class="product" data-category="clothes">T-Shirt</div>
+      <div class="product" data-category="electronics">Smartphone</div>
+      <div class="product" data-category="books">CSS Book</div>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
