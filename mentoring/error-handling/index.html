@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error Handling</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="fms-widget">
+      <h2>მოთამაშის რეგისტრაცია</h2>
+      <form id="playerRegistrationForm">
+        <input type="text" id="playerName" placeholder="სახელი და გვარი" required />
+        <input type="number" id="playerAge" placeholder="ასაკი" required />
+
+        <select id="clubSelect">
+          <option value="">ირჩევა კლუბი (იტვირთება...)</option>
+        </select>
+
+        <button type="submit" class="submit-btn">ბაზაში დამატება</button>
+      </form>
+      <div id="statusMessage"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+  </body>
+</html>
