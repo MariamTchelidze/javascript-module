@@ -156,3 +156,5 @@ console.log(admin.role);
 
 //
 // Checking if  everything is ready
+
+// new checks  done for  the program
