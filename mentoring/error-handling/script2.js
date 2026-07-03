@@ -155,3 +155,4 @@ console.log(user.role); // იბეჭდება "Admin"
 console.log(admin.role);
 
 //
+// Checking if  everything is ready
